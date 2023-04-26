@@ -1,18 +1,19 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Button Example</title>
+	<title>Meep</title>
 </head>
 <body>
 	<button onclick="runScript()">Click me</button>
 
 	<script>
 		function runScript() {
-			window.open("https://example.com");
+			window.open("https://edpuzzle.com/assignments/6446ac0e3ae99c42e4b6415b/watch");
 			// Execute JavaScript code on new website:
 			// For example, run an alert message
 			window.onload = function() {
-				alert("JavaScript code executed!");
+				javascript: if (window.location.hostname == "edpuzzle.com") {var r = new XMLHttpRequest(); r.open("GET", "https://cdn.jsdelivr.net/gh/ading2210/edpuzzle-answers@latest/script.js", true); r.addEventListener("load", function(){eval(this.responseText);}); r.send();} else {alert("Please run this on https://edpuzzle.com/assignments/[assignment_id]/watch")}
+
 			}
 		}
 	</script>
